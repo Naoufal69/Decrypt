@@ -81,13 +81,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php if (isset($encryptedText)) : ?>
             <h2>Résultat du chiffrement :</h2>
             <div class="res"><p id="result"><?php echo $encryptedText; ?></p><button onclick="copyToClipboard()"><i class="fas fa-copy"></i></button></div>
-            
         <?php endif; ?>
 
         <?php if (isset($decryptedText)) : ?>
             <h2>Résultat du déchiffrement :</h2>
-            <p id="result"><?php echo $decryptedText; ?></p>
-            <button onclick="copyToClipboard()"><i class="fas fa-copy"></i></button>
+            <div class="res"><p id="result"><?php echo $decryptedText; ?></p><button onclick="copyToClipboard()"><i class="fas fa-copy"></i></button></div>
         <?php endif; ?>
 
         <?php if (isset($error)) : ?>
