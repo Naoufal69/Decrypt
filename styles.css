@@ -1,10 +1,53 @@
-/* CSS pour la mise en page générale */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 20px;
-  max-width: 800px;
   margin: 0 auto;
+}
+
+label{
+  font-weight: bold;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.mainContent{
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.imgContainer{
+  width: 3%;
+}
+
+.TitleContainer{
+  width: 97%;
+}
+
+.header h1 {
+  margin-right: 2%;
+}
+
+.header img{
+  margin-left: 2%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }
 
 h1,

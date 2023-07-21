@@ -49,7 +49,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 </head>
 
 <body>
-    <h1>Chiffrement et déchiffrement en PHP</h1>
+    <div class="header">
+        <div class="imgContainer">
+            <img src="./Images/Symbole.png" alt="Logo" class="logo">
+        </div>
+        <div class="TitleContainer">
+            <h1>Chiffrement et déchiffrement en PHP</h1>
+        </div>
+    </div>
+
+    <div class="mainContent">
     <form method="post" action="">
         <label for="key">Clé de chiffrement :</label><br>
         <input type="text" name="key" id="key" value="<?php echo isset($key) ? $key : ''; ?>"><br>
@@ -77,6 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <h2>Résultat du déchiffrement :</h2>
         <p><?php echo $decryptedText; ?></p>
     <?php endif; ?>
+    </div>
 </body>
 
 </html>
