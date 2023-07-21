@@ -19,14 +19,14 @@ label{
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: black;
+  background-color: #1D3648;
   color: white;
 }
 
 .mainContent{
   margin-top: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .imgContainer{
@@ -97,11 +97,23 @@ h2 {
   margin-top: 30px;
 }
 
-p {
+.res {
+  display: flex;
+  justify-content: space-between;
   background-color: #f2f2f2;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+}
+
+.res button {
+  border: none;
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
+.res button:hover {
+  background-color: #a8a7a7;
 }
 
 /* Media query pour les appareils avec une largeur d'écran de 600px ou moins */
